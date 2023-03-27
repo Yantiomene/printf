@@ -23,21 +23,21 @@ The available convertion specifiers are:
 ## Usage
 
  - All the files are to be compiled on Ubuntu 20.04 LTS
- - Compile your code with gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format  *.c
+ - Compile your code with ```gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format  *.c```
  - Include the "main.h" header file on the functions using the _printf()
 
 ## Examples
 
-1. Prints the character 'H'
-   . Use: `_printf("Character:[%c]\n", 'H');`
-   . Output: `Character:[H]`
+1- Prints the character 'H'
+   - Use: `_printf("Character:[%c]\n", 'H');`
+   - Output: `Character:[H]`
 
-2. Prints the string "I am a string"
-   . Use: `_printf("String:[%s]\n", "I am a string !");`
-   . Output: `String:[I am a string !]`
+2- Prints the string "I am a string"
+   - Use: `_printf("String:[%s]\n", "I am a string !");`
+   - Output: `String:[I am a string !]`
 
-3. Prints an integer number
-   . Use: `_printf("Length:[%d, %i]\n", 39, 39);`
-   . Output: `Length:[39, 39]`
-   . Use: `_printf("Negative:[%d]\n", -762534);`
-   . Output: `Negative:[-762534]`
+3- Prints an integer number
+   - Use: `_printf("Length:[%d, %i]\n", 39, 39);`
+   - Output: `Length:[39, 39]`
+   - Use: `_printf("Negative:[%d]\n", -762534);`
+   - Output: `Negative:[-762534]`
