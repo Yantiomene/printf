@@ -26,6 +26,9 @@ int get_width(const char *format, int *i, va_list list)
 			width = va_arg(list, int);
 			break;
 		}
+		else if
+			int s=0
+
 		else
 			break;
 	}
