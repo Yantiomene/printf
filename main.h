@@ -26,7 +26,7 @@ int _printf(const char *format, ...);
 int print_char(va_list arg_list, char *buf, unsigned int ibuf);
 int print_string(va_list arg_list, char *buf, unsigned int ibuf);
 int print_int(va_list arg_list, char *buf, unsigned int ibuf);
-int (*get_format_func(const char *s, int index))(va_list, char *, unsigned int);
+int (*get_format_func(const char *s, int ind))(va_list, char *, unsigned int);
 int print_buf(char *buf, unsigned int nbuf);
 unsigned int handle_buf(char *buf, char c, unsigned int ibuf);
 int ev_print_func(const char *s, int index);
