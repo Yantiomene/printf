@@ -31,6 +31,6 @@ int print_int(va_list arg_list, char *buf, unsigned int ibuf)
 	}
 
 	for (j = 0; div > 0; div /= 10, j++)
-		ibuf = handle_buf(buf, (int_in / div) % 10 + '0', ibuf);
+		ibuf = handle_buf(buf, ((int_in / div) % 10) + '0', ibuf);
 	return (j + isneg);
 }
