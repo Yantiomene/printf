@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 				s = va_arg(arg_list, char *);
 				if (s == NULL)
 					return (-1);
-				count += print_string(s), i += 2;
+				count += print_string(arg_list), i += 2;
 				break;
 			case '%':
 				count += _putchar('%'), i += 2;
