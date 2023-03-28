@@ -1,17 +1,20 @@
 .\" Manpage for _printf
 .TH _printf (3) "27/03/2023" "1.0" "_printf Programmer's Manual"
-
 .SH NAME
 
 _printf
 
 .SH SYNOPSIS
-
-.B #include "main.h"
+.nf
+.BI printf (FORMAT, ARGUMENT)...
 .PP
+.BI #include "main.h"
+.BI #include <starg.h>
+.BI #include <unistd.h>
+.PP
+.BI "int _printf(const char *format, ...);"
 
-.B int _printf(const char *format, ...)
-.B ...)
+.BI ...)
 
 .SH DESCRIPTION
 
@@ -31,7 +34,7 @@ Produce output to stdout according to a format described below similar to the pr
 
 .SH EXAMPLES
 
-.B With main.c we can test our functions:
+.BI With main.c we can test our functions:
 
 .PP
 #include "main.h"
@@ -56,7 +59,7 @@ _printf("decimal: %d\n", 100);
 .PP
 Output: decimal: 100
 
-.B Return value
+.BI Return value
 
 On success, _printf returns the number of printed characters. If formats is error or NULL returns -1
 
