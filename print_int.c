@@ -10,8 +10,8 @@
 */
 int print_int(va_list arg_list, char *buf, unsigned int ibuf)
 {
-	int int_in, isneg = 0, j, i;
-	unsigned int temp, div;
+	int isneg = 0, i;
+	unsigned int temp, div, int_in, j;
 
 	i = va_arg(arg_list, int);
 	if (i < 0)
