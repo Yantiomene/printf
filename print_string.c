@@ -12,15 +12,17 @@
 
 int print_string(char *s)
 {
-	int  i = 0;
+	int i;
+	int count_fun = 0;
 
-	if (s == NULL)
+	if (!s)
 		s = "(null)";
-	while (s[i])
-	{
-		_putchar(s[i]);
-		i++;
-	}
-	return (i);
 
+	if (s[0] == '\0')
+		return (-1);
+
+	for (i = 0; s[i] != '\0'; i++)
+		count_fun += _putchar(s[i]);
+
+	return (count_fun);
 }
