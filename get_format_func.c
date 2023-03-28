@@ -11,7 +11,8 @@ int (*get_format_func(const char *s, int index))(va_list, char *, unsigned int)
 	print_t pr[] = {
 		{"c", print_char}, {"s", print_string},
 		{"%", print_prg}, {"d", print_int},
-		{"i", print_int}, {NULL, NULL},
+		{"i", print_int}, {"b", print_bin},
+		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index = index;
 
