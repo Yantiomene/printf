@@ -31,5 +31,7 @@ int print_buf(char *buf, unsigned int nbuf);
 unsigned int handle_buf(char *buf, char c, unsigned int ibuf);
 int ev_print_func(const char *s, int index);
 int print_prg(va_list arg __attribute__((unused)), char *buf, unsigned int ib);
+char *conv_to_binary(char *binary, unsigned int int_in, int limit);
+int print_bin(va_list arg_list, char *buf, unsigned int ibuf);
 
 #endif
