@@ -24,13 +24,13 @@ int _printf(const char *format, ...)
 			switch (format[i + 1])
 			{
 			case 'c':
-				count += _putchar(va_arg(arg_list, int)), i += 2;
+				count += print_char(arg_list), i += 2;
 				break;
 			case 's':
 				s = va_arg(arg_list, char *);
 				if (s == NULL)
 					return (-1);
-				count += _puts(s), i += 2;
+				count += print_string(arg_list), i += 2;
 				break;
 			case '%':
 				count += _putchar('%'), i += 2;
@@ -44,7 +44,7 @@ int _printf(const char *format, ...)
 			default: return (-1);
 			}
 			continue;
-		}count += _putchar(format[i]), i++;
-	}va_end(arg_list);
+		} count += _putchar(format[i]), i++;
+	} va_end(arg_list);
 	return (count);
 }
