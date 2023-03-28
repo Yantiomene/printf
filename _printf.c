@@ -30,10 +30,10 @@ int _printf(const char *format, ...)
 				s = va_arg(arg_list, char *);
 				if (s == NULL)
 					return (-1);
-				count += print_string(arg_list), i += 2;
+				count += print_string(s), i += 2;
 				break;
 			case '%':
-				count += print_char('%'), i += 2;
+				count += _putchar('%'), i += 2;
 				break;
 			case 'd':
 				count += print_int(va_arg(arg_list, int)), i += 2;
@@ -44,7 +44,7 @@ int _printf(const char *format, ...)
 			default: return (-1);
 			}
 			continue;
-		} count += print_char(format[i]), i++;
+		} count += _putchar(format[i]), i++;
 	} va_end(arg_list);
 	return (count);
 }
