@@ -11,7 +11,6 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 
 /*Conversion specifiers*/
-int print_char(char c);
 int print_string(char *s);
 int print_int(int i);
 
