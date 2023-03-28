@@ -5,25 +5,24 @@
 /**
  * print_string - print string.
  *
- * @args: argument.
+ * @s: argument.
  *
  * Return: character count.
  */
 
-int print_string(va_list args)
+int print_string(char *s)
 {
 	int i;
 	int count_fun = 0;
-	char *str = va_arg(args, char *);
 
-	if (!str)
-		str = "(null)";
+	if (!s)
+		s = "(null)";
 
-	if (str[0] == '\0')
+	if (s[0] == '\0')
 		return (-1);
 
-	for (i = 0; str[i] != '\0'; i++)
-		count_fun += _putchar(str[i]);
+	for (i = 0; s[i] != '\0'; i++)
+		count_fun += _putchar(s[i]);
 
 	return (count_fun);
 }

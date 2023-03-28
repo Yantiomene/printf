@@ -12,7 +12,7 @@ int _putchar(char c);
 
 /*Conversion specifiers*/
 int print_char(char c);
-int print_string(va_list args);
+int print_string(char *s);
 int print_int(int i);
 
 
