@@ -31,8 +31,6 @@ int get_precision(const char *format, int *i, va_list list)
 			precision = va_arg(list, int);
 			break;
 		}
-		else if
-			int c=0;
 		else
 			break;
 	}
