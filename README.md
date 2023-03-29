@@ -41,3 +41,19 @@ The available convertion specifiers are:
    - Output: `Length:[39, 39]`
    - Use: `_printf("Negative:[%d]\n", -762534);`
    - Output: `Negative:[-762534]`
+
+4- Prints an unsigned number
+   - Use: `_printf("Unsigned:[%u]\n", 2147484671);`
+   - Output: `Unsigned:[2147484671]`
+
+5- Prints an unsigned number in octal
+   - Use: `_printf("Unsigned octal:[%o]\n", 2147484671);`
+   - Output: `Unsigned octal:[20000001777]`
+
+6- Prints an unsigned number in hexadecimal
+   - Use: `_printf("Unsigned hexadecimal:[%x, %X]\n", 2147484671, 2147484671);`
+   - Output: `Unsigned hexadecimal:[800003ff, 800003FF]`
+
+7- Prints an address
+   - Use: `_printf("Address:[%p]\n", 0x7ffe637541f0);`
+   - Output: `Address:[0x7ffe637541f0]`
